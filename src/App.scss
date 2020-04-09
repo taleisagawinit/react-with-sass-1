@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+$lightGray: #d2d0d0;
+$darkGray: #b1b1b1;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.top {
+  height: 300px;
+  background: #FFAFBD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+.background {
+  position: absolute;
+  background-color: #fafafa;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+}
+
+button {
+  outline: none;
+  background-color: transparent;
+  border-width: 0;
+  padding: 18px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.loginButton {
+  background-color: #5883ff;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.createAccountButton {
+  border-color: #eaeaea;
+  border-width: 2px;
+}
+
+.forgotPasswordButton {
+  color: #8e8c8c;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.lightGrey {
+  color: #8e8c8c;
+}
+
+input {
+  outline: none;
+  padding: 10px;
+  border: 2px solid #eaeaea;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: #8e8c8c;
+  font-size: 1rem;
+}
+
