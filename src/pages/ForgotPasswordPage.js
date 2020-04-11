@@ -1,11 +1,11 @@
 import React from 'react';
 import '../App.scss';
+import { Link } from 'react-router-dom';
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = React.useState('')
 
   function handleSubmit() {
-    console.log(email)
   }
 
   return (
@@ -32,9 +32,12 @@ export default function ForgotPasswordPage() {
               <p>Send Email</p>
             </button>
           </form>
-          <button className="forgotPasswordButton">
-            <p>Already have an account? Login</p>
-          </button>
+          <Link to="/">
+            <button className="forgotPasswordButton">
+              <p>Already have an account? Login</p>
+            </button>  
+          </Link>
+          
         </div>
       </div>
     </div>

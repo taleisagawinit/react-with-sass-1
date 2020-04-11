@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.scss';
+import {Link} from 'react-router-dom';
+
 
 export default function CreateAccountPage() {
   const [name, setName] = React.useState('')
@@ -52,13 +54,18 @@ export default function CreateAccountPage() {
             onChange={e => setPassword(e.target.value)}
             >
             </input>
-            <button type="submit" className="loginButton bold">
-              <p>Login</p>
-            </button>
+            <Link to="/">
+              <button type="submit" className="loginButton bold">
+                <p>Create an Account</p>
+              </button>  
+            </Link>
           </form>
-          <button className="forgotPasswordButton">
-            <p>Already have an account? Login</p>
-          </button>
+          <Link to="/">
+            <button className="forgotPasswordButton">
+              <p>Already have an account? Login</p>
+            </button>  
+          </Link>
+          
         </div>
       </div>
     </div>

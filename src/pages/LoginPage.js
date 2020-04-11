@@ -1,12 +1,14 @@
 import React from 'react';
 import '../App.scss';
+import {Link} from 'react-router-dom';
 
 export default function LoginPage() {
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
 
   function handleSubmit() {
-    console.log(email, password)
+    localStorage.setItem('email', email)
+    localStorage.setItem('pass', password)
   }
 
   return (
@@ -40,16 +42,24 @@ export default function LoginPage() {
             onChange={e => setPassword(e.target.value)}
             >
             </input>
-            <button type="submit" className="loginButton bold">
-              <p>Login</p>
-            </button>
+            <Link to="/home">
+              <button type="submit" className="loginButton bold">
+                <p>Login</p>
+              </button>
+            </Link>
+            
           </form>
-          <button className="forgotPasswordButton">
-            <p>Forgot Password?</p>
-          </button>
-          <button className="createAccountButton bold">
-            <p>Create an Account</p>          
-          </button>
+          <Link to="/forgotpassword">
+            <button className="forgotPasswordButton">
+              <p>Forgot Password?</p>
+            </button>  
+          </Link>
+          <Link to="signup">
+            <button className="createAccountButton bold">
+              <p>Create an Account</p>          
+            </button>  
+          </Link>
+          
         </div>
       </div>
     </div>
