@@ -9,11 +9,14 @@ import HomePageNav from './navigation/HomePageNav'
 function App() {
 
   return (
-    <Router>
-      <Route exact path="/" component={HomePageNav}/>
-      <LoginRoute exact path="/signup" component={CreateAccountPage}/>
-      <LoginRoute exact path="/forgotpassword" component={ForgotPasswordPage}/>
-    </Router>
+    <div className="container">
+      <Router>
+        <Route exact path="/" component={HomePageNav}/>
+        <LoginRoute exact path="/signup" component={CreateAccountPage}/>
+        <LoginRoute exact path="/forgotpassword" component={ForgotPasswordPage}/>
+      </Router> 
+    </div>
+    
    
   );
 }

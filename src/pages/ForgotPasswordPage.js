@@ -9,11 +9,7 @@ export default function ForgotPasswordPage() {
   }
 
   return (
-    <div>
-      <div className="top">
-      </div>
-      <div className="background">
-        <div className="login">
+        <div>
           <h2>Forgot Password</h2>
           <p className="lightGrey">Enter your email to recover your password</p>
           <form onSubmit={handleSubmit}>
@@ -39,8 +35,6 @@ export default function ForgotPasswordPage() {
           </Link>
           
         </div>
-      </div>
-    </div>
   );
 }
 

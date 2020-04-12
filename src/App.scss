@@ -21,35 +21,40 @@ p {
   font-size: 1rem;
 }
 
-.top {
+.container {
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
   background: #FFAFBD;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
-}
-
-.background {
-  position: absolute;
-  background-color: #fafafa;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px;
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: #fafafa;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+  }
 }
 
 form {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-
+  input {
+    outline: none;
+    padding: 10px;
+    border: 2px solid #eaeaea;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #8e8c8c;
+    font-size: 1rem;
+  }
 }
 
 button {
@@ -76,6 +81,7 @@ button {
   color: #8e8c8c;
 }
 
+
 .bold {
   font-weight: 700;
 }
@@ -84,13 +90,26 @@ button {
   color: #8e8c8c;
 }
 
-input {
-  outline: none;
-  padding: 10px;
-  border: 2px solid #eaeaea;
-  margin: 5px 0;
-  border-radius: 5px;
-  color: #8e8c8c;
-  font-size: 1rem;
-}
 
+// @media screen and (min-width: 568px) {
+  
+
+// }
+
+@media screen and (min-width: 768px) {
+  .container {
+    align-items: center;
+    > div {
+      box-shadow:  0 3px 17px -5px #000;
+      border-radius: 15px;
+      padding: 45px;
+      max-width: 400px;
+    }
+  }
+
+  form input {
+    padding: 15px;
+  }
+
+
+}

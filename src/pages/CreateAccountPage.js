@@ -13,11 +13,7 @@ export default function CreateAccountPage() {
   }
 
   return (
-    <div>
-      <div className="top">
-      </div>
-      <div className="background">
-        <div className="login">
+        <div>
           <h2>Create an Account</h2>
           <p className="lightGrey">Sign up to continue</p>
           <form onSubmit={handleSubmit}>
@@ -67,8 +63,6 @@ export default function CreateAccountPage() {
           </Link>
           
         </div>
-      </div>
-    </div>
   );
 }
 

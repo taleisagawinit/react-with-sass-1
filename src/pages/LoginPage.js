@@ -12,11 +12,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div>
-      <div className="top">
-      </div>
-      <div className="background">
-        <div className="login">
+        <div>
           <h2>Welcome Back</h2>
           <p className="lightGrey">Login to continue</p>
           <form onSubmit={handleSubmit}>
@@ -61,8 +57,6 @@ export default function LoginPage() {
           </Link>
           
         </div>
-      </div>
-    </div>
   );
 }
 
